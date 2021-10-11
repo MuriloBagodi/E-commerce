@@ -27,6 +27,12 @@ body {
   color: hsl(0, 0%, 0%);
 }
 
+.list__items {
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .navbar ul {
   display: flex;
   justify-content: start;
@@ -69,7 +75,6 @@ body {
 .borderB:hover {
   border-bottom: 5px solid orange;
   transition: 0.15s;
-  
 }
 
 .btn_cart {
@@ -137,10 +142,9 @@ body {
 }
 
 .cart__items {
-  height: inherit;
   display: flex !important;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 .cart__items p {
   color: hsl(220, 14%, 75%);
@@ -250,7 +254,7 @@ body {
   transition: 0.25s;
 }
 
-.btnLess:hover{
+.btnLess:hover {
   background-color: #dfdfdf;
   transition: 0.25s;
 }
@@ -269,7 +273,7 @@ body {
   transition: 0.25s;
 }
 
-.btnPlus:hover{
+.btnPlus:hover {
   background-color: #dfdfdf;
   transition: 0.25s;
 }
@@ -296,22 +300,184 @@ body {
   letter-spacing: -1px;
   color: #fff;
   transition: 0.5s;
+  cursor: pointer;
 }
 
-.btnAddItem img{
-color: #fff;
+.btnAddItem img {
+  color: #fff;
 }
 
-.btnAddItem:hover{
+.btnAddItem:hover {
   background-color: #ffd698;
   box-shadow: 2.5px 20px 26.5px -11px #ffd293;
   transition: 0.5s;
 }
 
-.selector__img div img{
+.selector__img {
+  justify-content: center;
+}
+
+.selector__img div img {
   border-radius: 10px;
 }
 
-.selector__img div{
+.selector__img div {
   padding: 10px;
+}
+
+.btn__img4 {
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/image-product-4-thumbnail.jpg");
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.btn__img4:hover,
+.active {
+  background-image: linear-gradient(
+      rgba(231, 231, 231, 0.397),
+      rgba(216, 216, 216, 0.5)
+    ),
+    url("../images/image-product-4-thumbnail.jpg");
+  transition: 0.5s;
+}
+
+.btn__img3 {
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/image-product-3-thumbnail.jpg");
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.btn__img3:hover,
+.active {
+  background-image: linear-gradient(
+      rgba(231, 231, 231, 0.397),
+      rgba(216, 216, 216, 0.5)
+    ),
+    url("../images/image-product-3-thumbnail.jpg");
+  transition: 0.5s;
+}
+
+.btn__img2 {
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/image-product-2-thumbnail.jpg");
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.btn__img2:hover,
+.active {
+  background-image: linear-gradient(
+      rgba(231, 231, 231, 0.397),
+      rgba(216, 216, 216, 0.5)
+    ),
+    url("../images/image-product-2-thumbnail.jpg");
+  transition: 0.5s;
+}
+
+.btn__img1 {
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/image-product-1-thumbnail.jpg");
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.btn__img1:hover,
+.active {
+  background-image: linear-gradient(
+      rgba(231, 231, 231, 0.397),
+      rgba(216, 216, 216, 0.5)
+    ),
+    url("../images/image-product-1-thumbnail.jpg");
+  transition: 0.5s;
+}
+
+.center__img {
+  width: 100%;
+  height: inherit;
+  border-radius: 10px;
+}
+
+.img0 {
+  background-image: url("../images/image-product-1.jpg");
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url("../images/image-product-2.jpg");
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url("../images/image-product-3.jpg");
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url("../images/image-product-4.jpg");
+  background-size: cover;
+}
+
+.popUp__qtd {
+  background-color: orange;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  width: 28px;
+  margin-top: -50px;
+  margin-left: 20px !important;
+}
+
+.btnCheckout {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btnCheckout:hover{
+  
+  background-color: #ffd698;
+  box-shadow: 2.5px 20px 26.5px -11px #ffd293;
+  transition: 0.5s;
+
+}
+
+.w-100 {
+  width: 100%;
 }
